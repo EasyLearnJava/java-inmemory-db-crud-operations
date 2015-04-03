@@ -30,11 +30,13 @@ DB_PASSWORD = "";
 4. <b>UpdateRecords.java --></b> run this class to update specific records which match a criteria
 5. <b>DeleteRecords.java --></b> run this class to delete specific records which match a criteria
 6. <b>DropTable.java --></b> run this class to drop the table, which deletes the <b>EMPLOYEE</b> table from the in memory db
+ 
 ***
 
 Two more classes are present under the package <i>com.easylearnjava.util</i>
 * CheckForATableInDB.java --> run this class to check if the table <b>EMPLOYEE</b> is present in the DB
 * CheckForAllTablesInDB.java --> run this class to check all the tables present in the DB
+ 
 ***
 For more information visit     
 <http://www.h2database.com/html/main.html>

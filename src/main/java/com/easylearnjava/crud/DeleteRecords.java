@@ -22,9 +22,9 @@ public class DeleteRecords {
 	public static void deleteEmployeeRecords(Connection connection, int id){
 		
 		PreparedStatement pStmt = null;
-		String createSQL = "DELETE FROM EMPLOYEE WHERE EMP_ID = ?";
+		String deleteSQL = "DELETE FROM EMPLOYEE WHERE EMP_ID = ?";
 		try{
-			pStmt = connection.prepareStatement(createSQL);
+			pStmt = connection.prepareStatement(deleteSQL);
 			pStmt.setInt(1, id);			
 			int count = pStmt.executeUpdate();
 			System.out.println("No of records effected : " + count);

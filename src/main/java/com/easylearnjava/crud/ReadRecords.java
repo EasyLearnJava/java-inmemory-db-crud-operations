@@ -12,19 +12,19 @@ public class ReadRecords {
 
 		Connection conn = DBConnection.getH2DBConnection();
 		try {
-			insertEmployeeRecords(conn);
+			readEmployeeRecords(conn);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	//Insert Employee records
-	public static void insertEmployeeRecords(Connection connection){
+	//Read Employee records
+	public static void readEmployeeRecords(Connection connection){
 		
 		PreparedStatement pStmt = null;
-		String createSQL = "SELECT * FROM EMPLOYEE";
+		String readSQL = "SELECT * FROM EMPLOYEE";
 		try{
-			pStmt = connection.prepareStatement(createSQL);
+			pStmt = connection.prepareStatement(readSQL);
 			ResultSet rs = pStmt.executeQuery();
 			System.out.println("EMPLOYEE ID " + "\t" + "EMPLOYEE NAME " + "\t" + "EMPLOYEE PASSWORD");
 			System.out.println("----------- " + "\t" + "-------------- " + "\t" + "-----------------");

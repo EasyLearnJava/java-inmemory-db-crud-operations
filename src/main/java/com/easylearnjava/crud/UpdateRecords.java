@@ -22,9 +22,9 @@ public class UpdateRecords {
 	public static void updateEmployeeRecords(Connection connection, int id, String pwd){
 		
 		PreparedStatement pStmt = null;
-		String createSQL = "UPDATE EMPLOYEE SET EMP_PASSWORD = ? WHERE EMP_ID = ?";
+		String updateSQL = "UPDATE EMPLOYEE SET EMP_PASSWORD = ? WHERE EMP_ID = ?";
 		try{
-			pStmt = connection.prepareStatement(createSQL);
+			pStmt = connection.prepareStatement(updateSQL);
 			pStmt.setString(1, pwd);
 			pStmt.setInt(2, id);			
 			int count = pStmt.executeUpdate();

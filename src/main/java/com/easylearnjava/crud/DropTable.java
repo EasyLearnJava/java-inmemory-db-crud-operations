@@ -23,9 +23,9 @@ public class DropTable {
 	public static void dropEmployeeTable(Connection connection){
 		
 		PreparedStatement pStmt = null;
-		String createSQL = "DROP TABLE EMPLOYEE;";
+		String dropSQL = "DROP TABLE EMPLOYEE;";
 		try{
-			pStmt = connection.prepareStatement(createSQL);
+			pStmt = connection.prepareStatement(dropSQL);
 			pStmt.execute();			
 			pStmt.close();
 		}catch(Exception e){

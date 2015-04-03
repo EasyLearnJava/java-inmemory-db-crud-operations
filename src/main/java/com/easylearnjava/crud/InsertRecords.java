@@ -22,9 +22,9 @@ public class InsertRecords {
 	public static void insertEmployeeRecords(Connection connection, int id, String name, String pwd){
 		
 		PreparedStatement pStmt = null;
-		String createSQL = "INSERT INTO EMPLOYEE (EMP_ID, EMP_NAME, EMP_PASSWORD) VALUES (?,?,?)";
+		String insertSQL = "INSERT INTO EMPLOYEE (EMP_ID, EMP_NAME, EMP_PASSWORD) VALUES (?,?,?)";
 		try{
-			pStmt = connection.prepareStatement(createSQL);
+			pStmt = connection.prepareStatement(insertSQL);
 			pStmt.setInt(1, id);
 			pStmt.setString(2, name);
 			pStmt.setString(3, pwd);

@@ -34,8 +34,8 @@ DB_PASSWORD = "";
 ***
 
 Two more classes are present under the package <i>com.easylearnjava.util</i>
-* CheckForATableInDB.java --> run this class to check if the table <b>EMPLOYEE</b> is present in the DB
-* CheckForAllTablesInDB.java --> run this class to check all the tables present in the DB
+* <b>CheckForATableInDB.java --></b> run this class to check if the table <b>EMPLOYEE</b> is present in the DB
+* <b>CheckForAllTablesInDB.java --></b> run this class to check all the tables present in the DB
  
 ***
 For more information visit     
